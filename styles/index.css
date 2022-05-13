@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  height: 100vh;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px 2%;
+  font-size: 1.3rem;
+  text-align: center;
+  font-weight: lighter;
+}
+
+header span {
+  color: red;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+section {
+  padding: 0 2%;
+  width: 100%;
+  height: 100%;
+  background-image: url(/assets/fundo.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  padding-top: 20%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-quizz {
+  color: rgb(246, 40, 40);
+  text-align: center;
+  padding: 12px;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  max-width: 800px;
+}
+
+.title-quizz span {
+  text-transform: uppercase;
+}
+
+.title-quizz span.yellow {
+  color: yellow;
+}
+
+
+.quizz-card {
+  margin-top: 2rem;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  max-width: 800px;
+}
+
+#question-1, #question-2, #question-3, #question-4 {
+  padding: 40px 20px;
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image: conic-gradient(#eb0e9a, rgb(255, 123, 0), #eb0e9a, #eb0e9a) 1;
+  width: 100%;
+  height: 100%;
+  color: yellow;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#question-2, #question-3, #question-4 {
+  display: none;
+}
+
+#question-1 p, #question-2 p, #question-3 p, #question-4 p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.actions button {
+  text-transform: uppercase;
+  width: 45%;
+  cursor: pointer;
+  outline: none;
+  border-radius: 8px;
+  padding: 10px 12px;                                       
+  color: black;
+  background-color: yellow;
+  border: none;
+  font-size: 1.4rem;
+}
+
+.actions button:hover {
+  background-color: rgb(217, 217, 11);
+}
+
+footer {
+  width: 100%;
+  /* justify-content: flex-end; */
+  color: white;
+  background-color: black;
+  padding: 10px 2%;
+}
+
+footer p {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 600px;
+  font-size: .7rem;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  header {
+    font-size: 1.8rem;
+  }
+
+  section {
+    height: 89.5vh;
+    padding-top: 8rem;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+  }
+
+  .title-quizz {
+    font-size: 1.5rem;
+    color: rgb(246, 40, 40);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    max-width: 800px;
+  }
+
+  .quizz-card {
+    margin-top: 2rem;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    max-width: 800px;
+  }
+
+  .title-quizz {
+    padding: 12px 10px;
+  }
+}

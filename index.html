@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <title>Quizz</title>
+</head>
+<body>
+  <header>
+    <p>
+      Você tem 2 minutos para assistir esse vídeo, <span>acesso limitado</span>
+    </p>
+  </header>
+
+  <section>
+    <div class="container">
+
+      <div class="title-quizz">
+        <p>
+          Responda essas <span class="yellow">4 perguntas</span> e <span class="yellow">descubra</span> 
+        </p>
+        <p>
+          o novo <span>babado</span> que está <span>secando</span> até quem não quer!
+        </p>
+      </div>
+
+      <div class="quizz-card">
+
+        <div class="quizz-content" id="question-1">
+          <p>Você é mulher?</p>
+
+          <div class="actions">
+            <button onclick="goToQuestTwo()">Sim</button>
+            <button onclick="goToQuestTwo()">Não</button>
+          </div>
+        </div>
+
+        <div class="quizz-content" id="question-2">
+          <p>Gostaria de perder peso e sente que falta apoio de pessoas próximas?</p>
+
+          <div class="actions">
+            <button onclick="goToQuestThree()">Sim</button>
+            <button onclick="goToQuestThree()">Não</button>
+          </div>
+        </div>
+
+        <div class="quizz-content" id="question-3">
+          <p>Já fez alguma dieta rígida ou lutou para perder peso no passado? </p>
+
+          <div class="actions">
+            <button onclick="goToQuestFour()">Sim</button>
+            <button onclick="goToQuestFour()">Não</button>
+          </div>
+        </div>
+
+        <div class="quizz-content" id="question-4">
+          <p>Mesmo quando você come pouco, seu peso nunca diminui e só aumenta? </p>
+
+          <div class="actions">
+            <button onclick="goToSalesPage()">Sim</button>
+            <button onclick="goToSalesPage()">Não</button>
+          </div>
+        </div>
+      
+      </div>
+
+    </div>
+  </section>
+  <footer>
+    <p>
+      © 2022 – Todos os direitos reservados. Este site não faz parte nem é endossado pelo Facebook.
+      Facebook é uma marca comercial Facebook Inc.
+    </p>
+  </footer>
+  <script src="./scripts.js"></script>
+</body>
+</html>
